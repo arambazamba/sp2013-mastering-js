@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="374ccaba-829d-42c1-854e-35a29f3977cc" solutionId="374ccaba-829d-42c1-854e-35a29f3977cc" resetWebServer="false" sharePointProductVersion="15.0" name="ModalDialog" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <projectItems>
+    <projectItemReference itemId="56506a84-adda-4941-963a-a264180eb4da" />
+  </projectItems>
+</package>

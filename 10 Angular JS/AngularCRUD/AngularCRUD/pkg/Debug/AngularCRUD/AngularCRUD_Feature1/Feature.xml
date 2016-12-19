@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="f3575ec7-227a-42a1-a6ac-d6e29588ae0b" Scope="Web" Title="AngularCRUD Feature1">
+  <ElementManifests>
+    <ElementManifest Location="CustomActions\Elements.xml" />
+  </ElementManifests>
+</Feature>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="d19b4608-cc3c-4c5d-a760-3da71749d366" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="SecurityDemos.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\SecurityDemos\jquery-2.1.4.min.js" />
+    <TemplateFile Location="Layouts\SecurityDemos\SecurityBasics.aspx" />
+    <TemplateFile Location="Layouts\SecurityDemos\SecurityBasics.aspx.js" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="SecurityDemos_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

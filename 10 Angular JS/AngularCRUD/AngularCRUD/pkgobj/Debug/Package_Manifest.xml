@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="baa92bbe-18fc-41de-aa2d-72665d17f998" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="AngularCRUD.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\AngularCRUD\Angular.aspx" />
+    <TemplateFile Location="Layouts\AngularCRUD\angular.min.js" />
+    <TemplateFile Location="Layouts\AngularCRUD\app.js" />
+    <TemplateFile Location="Layouts\AngularCRUD\jquery-2.1.4.min.js" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="AngularCRUD_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

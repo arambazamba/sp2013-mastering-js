@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Vouchers"
+                OnQuickLaunch="TRUE"
+                TemplateType="100"
+                Url="Lists/Vouchers"
+                Description="My Vouchers List">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Amazon</Field>
+          <Field Name="Amount">2000</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Netflix</Field>
+          <Field Name="Amount">9</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

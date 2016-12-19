@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="UsingBootstrap Feature1" Id="00713dc8-f5d2-447a-af3c-ace149bfb7d5" Scope="Web">
+  <ElementManifests>
+    <ElementManifest Location="Vouchers\Elements.xml" />
+    <ElementFile Location="Vouchers\Schema.xml" />
+    <ElementManifest Location="CustomAction\Elements.xml" />
+  </ElementManifests>
+</Feature>

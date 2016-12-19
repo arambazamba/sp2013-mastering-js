@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="188a877e-8014-4b78-8e8f-ac98b130993b" Scope="Web" Title="JSOMBasics">
+  <ElementManifests>
+    <ElementManifest Location="CustomActions\Elements.xml" />
+  </ElementManifests>
+</Feature>

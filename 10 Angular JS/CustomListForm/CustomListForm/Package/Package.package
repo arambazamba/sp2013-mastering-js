@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="ee998bb5-40fb-4bd3-804f-72c3c808ef64" solutionId="ee998bb5-40fb-4bd3-804f-72c3c808ef64" resetWebServer="false" sharePointProductVersion="15.0" name="CustomListForm" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <projectItems>
+    <projectItemReference itemId="1910681d-9ac3-47db-984e-90036d1e1a4d" />
+  </projectItems>
+</package>

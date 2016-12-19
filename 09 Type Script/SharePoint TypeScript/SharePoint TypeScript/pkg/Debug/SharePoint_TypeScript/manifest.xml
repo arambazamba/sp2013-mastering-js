@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="d6f1564b-989a-4efa-8a6f-be2e38b4d42c" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="SharePoint TypeScript.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\TypeScript\demos\Classes.js.map" />
+    <TemplateFile Location="Layouts\TypeScript\demos\functions.js.map" />
+    <TemplateFile Location="Layouts\TypeScript\demos\generics.js.map" />
+    <TemplateFile Location="Layouts\TypeScript\demos\interfaces.js.map" />
+    <TemplateFile Location="Layouts\TypeScript\demos\mathFunctions.js.map" />
+    <TemplateFile Location="Layouts\TypeScript\demos\modules.js.map" />
+    <TemplateFile Location="Layouts\TypeScript\demos\Service.js.map" />
+    <TemplateFile Location="Layouts\TypeScript\demos\servicemodel.js.map" />
+    <TemplateFile Location="Layouts\TypeScript\demos\types.js.map" />
+    <TemplateFile Location="Layouts\TypeScript\css\demo.css" />
+    <TemplateFile Location="Layouts\TypeScript\Demos.aspx" />
+    <TemplateFile Location="Layouts\TypeScript\demos.aspx.js" />
+    <TemplateFile Location="Layouts\TypeScript\demos\Classes.html" />
+    <TemplateFile Location="Layouts\TypeScript\demos\Classes.js" />
+    <TemplateFile Location="Layouts\TypeScript\demos\functions.html" />
+    <TemplateFile Location="Layouts\TypeScript\demos\functions.js" />
+    <TemplateFile Location="Layouts\TypeScript\demos\generics.html" />
+    <TemplateFile Location="Layouts\TypeScript\demos\generics.js" />
+    <TemplateFile Location="Layouts\TypeScript\demos\interfaces.html" />
+    <TemplateFile Location="Layouts\TypeScript\demos\interfaces.js" />
+    <TemplateFile Location="Layouts\TypeScript\demos\mathFunctions.js" />
+    <TemplateFile Location="Layouts\TypeScript\demos\modules.html" />
+    <TemplateFile Location="Layouts\TypeScript\demos\modules.js" />
+    <TemplateFile Location="Layouts\TypeScript\demos\Service.html" />
+    <TemplateFile Location="Layouts\TypeScript\demos\Service.js" />
+    <TemplateFile Location="Layouts\TypeScript\demos\servicemodel.js" />
+    <TemplateFile Location="Layouts\TypeScript\demos\types.html" />
+    <TemplateFile Location="Layouts\TypeScript\demos\types.js" />
+    <TemplateFile Location="Layouts\TypeScript\lib\jquery\jquery.min.js" />
+    <TemplateFile Location="Layouts\TypeScript\lib\moment\moment.js" />
+    <TemplateFile Location="Layouts\TypeScript\demos\types.ts" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="SharePoint TypeScript_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

@@ -1,0 +1,6 @@
+c:\users\robwindsor\documents\visual studio 2013\Projects\AppScriptPartDemo\AppScriptPartDemo\bin\Debug\AppScriptPartDemo.pdb
+c:\users\robwindsor\documents\visual studio 2013\Projects\AppScriptPartDemo\AppScriptPartDemo\obj\Debug\AppScriptPartDemo.dll
+c:\users\robwindsor\documents\visual studio 2013\Projects\AppScriptPartDemo\AppScriptPartDemo\obj\Debug\AppScriptPartDemo.pdb
+D:\sharepoint-hosted-add-ins-developing\5-sharepoint-hosted-add-ins-developing-m5-exercise-files\AppScriptPartDemo-1\AppScriptPartDemo\bin\Debug\AppScriptPartDemo.pdb
+D:\sharepoint-hosted-add-ins-developing\5-sharepoint-hosted-add-ins-developing-m5-exercise-files\AppScriptPartDemo-1\AppScriptPartDemo\obj\Debug\AppScriptPartDemo.dll
+D:\sharepoint-hosted-add-ins-developing\5-sharepoint-hosted-add-ins-developing-m5-exercise-files\AppScriptPartDemo-1\AppScriptPartDemo\obj\Debug\AppScriptPartDemo.pdb

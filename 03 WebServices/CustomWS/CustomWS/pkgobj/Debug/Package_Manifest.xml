@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="8ff45271-8011-480d-ac1a-addf3b8fcd26" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="CustomWS.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <RootFiles>
+    <RootFile Location="ISAPI\DemoService.svc" />
+  </RootFiles>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\CustomWS\jquery-2.1.4.min.js" />
+    <TemplateFile Location="Layouts\CustomWS\ServiceTester.aspx" />
+    <TemplateFile Location="Layouts\CustomWS\ServiceTester.aspx.js" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="CustomWS_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

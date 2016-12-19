@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="54010041-1ab2-4157-91e3-cdfff57a7ee7" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="Callouts.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\Callouts\CalloutHost.aspx" />
+    <TemplateFile Location="Layouts\Callouts\calloutHost.js" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="Callouts_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

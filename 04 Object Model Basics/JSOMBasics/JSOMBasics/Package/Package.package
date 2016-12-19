@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="1ec098fc-0e44-4078-aef5-c996bba67b0e" solutionId="1ec098fc-0e44-4078-aef5-c996bba67b0e" resetWebServer="false" sharePointProductVersion="15.0" name="JSOMBasics" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="98f2e33d-d6e3-4435-8f99-624573e79eee" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="e3cfcc76-b7a2-447e-896c-9722dbdebbba" />
+    <projectItemReference itemId="c30f5746-602d-4746-82ab-52d7689e0788" />
+  </projectItems>
+</package>

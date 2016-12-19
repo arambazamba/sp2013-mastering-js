@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{32256D81-1507-4D7C-AEB5-BD24A90D8426}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JSOMBasics</RootNamespace>
+    <AssemblyName>JSOMBasics</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Layouts\JSOMBasics\Context.aspx.cs">
+      <DependentUpon>Context.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\JSOMBasics\Context.aspx.designer.cs">
+      <DependentUpon>Context.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\JSOMBasics\CRUD.aspx.cs">
+      <DependentUpon>CRUD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\JSOMBasics\CRUD.aspx.designer.cs">
+      <DependentUpon>CRUD.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\JSOMBasics\JSOMBasics.aspx.cs">
+      <DependentUpon>JSOMBasics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\JSOMBasics\JSOMBasics.aspx.designer.cs">
+      <DependentUpon>JSOMBasics.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\JSOMBasics\ManageLists.aspx.cs">
+      <DependentUpon>ManageLists.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\JSOMBasics\ManageLists.aspx.designer.cs">
+      <DependentUpon>ManageLists.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\JSOMBasics\SitesAndColletions.aspx.cs">
+      <DependentUpon>SitesAndColletions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\JSOMBasics\SitesAndColletions.aspx.designer.cs">
+      <DependentUpon>SitesAndColletions.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1033\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c30f5746-602d-4746-82ab-52d7689e0788}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bab4b924-6476-47a3-bf34-1217a30ed219}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\JSOMBasics\JSOMBasics.feature">
+      <FeatureId>{98f2e33d-d6e3-4435-8f99-624573e79eee}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e3cfcc76-b7a2-447e-896c-9722dbdebbba}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{1ec098fc-0e44-4078-aef5-c996bba67b0e}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="1033\jquery-2.1.4.min.js" />
+    <Content Include="1033\masteringJSCommon.js" />
+    <Content Include="1033\ondemand.js" />
+    <Content Include="CustomActions\Elements.xml" />
+    <Content Include="Features\JSOMBasics\JSOMBasics.Template.xml">
+      <DependentUpon>JSOMBasics.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\JSOMBasics\Context.aspx" />
+    <Content Include="Layouts\JSOMBasics\Context.aspx.js" />
+    <Content Include="Layouts\JSOMBasics\CRUD.aspx" />
+    <Content Include="Layouts\JSOMBasics\crud.aspx.js" />
+    <Content Include="Layouts\JSOMBasics\documentLibrary.js" />
+    <Content Include="Layouts\JSOMBasics\JSOMBasics.aspx" />
+    <Content Include="Layouts\JSOMBasics\JSOMBasics.aspx.js" />
+    <Content Include="Layouts\JSOMBasics\ManageLists.aspx" />
+    <Content Include="Layouts\JSOMBasics\ManageLists.aspx.js" />
+    <Content Include="Layouts\JSOMBasics\SitesAndColletions.aspx" />
+    <Content Include="Layouts\JSOMBasics\SitesAndColletions.aspx.js" />
+    <Content Include="Scripts\SP.debug.js" />
+    <Content Include="Scripts\SP.js" />
+    <Content Include="Scripts\_references.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

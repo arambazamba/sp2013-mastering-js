@@ -1,0 +1,1 @@
+bin\Debug\REST_Basics.wsp

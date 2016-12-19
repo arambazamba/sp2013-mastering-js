@@ -1,0 +1,1 @@
+bin\Debug\Add_In_Part.wsp

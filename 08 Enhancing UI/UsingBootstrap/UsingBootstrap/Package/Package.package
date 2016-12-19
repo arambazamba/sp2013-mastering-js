@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="0d010c01-540a-4cd6-b92e-8bce3f257f5f" solutionId="0d010c01-540a-4cd6-b92e-8bce3f257f5f" resetWebServer="false" sharePointProductVersion="15.0" name="UsingBootstrap" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="7281c1bf-d48b-4edb-b3d6-267c6baeafab" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="b7612812-cd0c-4521-9cf2-5bf4bdb148a7" />
+  </projectItems>
+</package>

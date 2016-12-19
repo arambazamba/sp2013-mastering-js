@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="ee998bb5-40fb-4bd3-804f-72c3c808ef64" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="CustomListForm.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\CustomListForm\AngularForm.aspx" />
+    <TemplateFile Location="Layouts\CustomListForm\AngularForm.aspx.js" />
+    <TemplateFile Location="Layouts\CustomListForm\jquery-2.1.4.min.js" />
+  </TemplateFiles>
+</Solution>

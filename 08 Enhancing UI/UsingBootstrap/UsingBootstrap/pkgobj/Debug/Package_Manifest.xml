@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="0d010c01-540a-4cd6-b92e-8bce3f257f5f" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="UsingBootstrap.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\UsingBootstrap\lib\bootstrap.css" />
+    <TemplateFile Location="Layouts\UsingBootstrap\lib\bootstrap.min.js" />
+    <TemplateFile Location="Layouts\UsingBootstrap\lib\jquery-1.11.1.min.js" />
+    <TemplateFile Location="Layouts\UsingBootstrap\Vouchers.aspx" />
+    <TemplateFile Location="Layouts\UsingBootstrap\vouchers.js" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="UsingBootstrap_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="de71be52-ff6a-49da-bbc9-55419a8f64d5" solutionId="de71be52-ff6a-49da-bbc9-55419a8f64d5" resetWebServer="false" sharePointProductVersion="15.0" name="DisplayTemplates" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="84d9f606-9984-434f-809f-225166178614" />
+  </features>
+</package>

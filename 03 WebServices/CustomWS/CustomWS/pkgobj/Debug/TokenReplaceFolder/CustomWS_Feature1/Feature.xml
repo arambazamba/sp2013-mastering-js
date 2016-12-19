@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="1673743b-6ee6-41cb-a118-42663a28097c" Scope="Web" Title="CustomWS">
+  <ElementManifests>
+    <ElementManifest Location="CustomActions\Elements.xml" />
+  </ElementManifests>
+</Feature>

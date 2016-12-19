@@ -1,0 +1,152 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"> 
+<head>
+<title>Default Ignite Item</title>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:TemplateHidden msdt:dt="string">0</mso:TemplateHidden>
+<mso:MasterPageDescription msdt:dt="string"></mso:MasterPageDescription>
+<mso:ContentTypeId msdt:dt="string">0x0101002039C03B61C64EC4A04F5361F385106603</mso:ContentTypeId>
+<mso:TargetControlType msdt:dt="string">;#SearchResults;#</mso:TargetControlType>
+<mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
+<mso:ManagedPropertyMapping msdt:dt="string">'Title':'Title','Author':'Author','Size':'Size','Path':'Path','Description':'Description','LastModifiedTime':'LastModifiedTime','CollapsingStatus':'CollapsingStatus','DocId':'DocId','HitHighlightedSummary':'HitHighlightedSummary','HitHighlightedProperties':'HitHighlightedProperties','FileExtension':'FileExtension','ViewsLifeTime':'ViewsLifeTime','ParentLink':'ParentLink','FavoriteColor':'FavoriteColor'</mso:ManagedPropertyMapping>
+<mso:HtmlDesignStatusAndPreview msdt:dt="string">http://intranet.contoso.com/sites/search/_layouts/15/previewwithstatus.aspx?Url=%5Fcatalogs%2Fmasterpage%2FDisplay%20Templates%2FSearch%2FItem%5FIgnite%2Ehtml, Conversion successful.</mso:HtmlDesignStatusAndPreview>
+<mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
+<mso:CrawlerXSLFile msdt:dt="string"></mso:CrawlerXSLFile>
+<mso:HtmlDesignPreviewUrl msdt:dt="string"></mso:HtmlDesignPreviewUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <div id="Item_Default">
+<!--#_ 
+         
+                    
+        var displayName;
+        var email;
+        var viewCountInfo;
+
+        //debugger;
+
+        //sometimes the author name looks like this:
+        //speschka@vbtoys.com | Steve Peschka | i:0#.w|vbtoys\speschka
+        //and sometimes it just looks like this:
+        //Steve Peschka
+
+        var authorInfo = Srch.U.processHHXML(ctx.CurrentItem.Author);
+
+        var startPipe = authorInfo.indexOf("|");
+        var endPipe = authorInfo.indexOf("|", startPipe + 1);
+
+        if (startPipe < 0) 
+        {
+            displayName = authorInfo;
+
+            //in this case we don't really have an email address, so we'll just make one up
+            startPipe = authorInfo.indexOf(" ");  //going to look for space between first and last name
+            if (startPipe > -1)  //they have a space
+                email = authorInfo.substr(0, startPipe) + "@vbtoys.com";
+            else
+                email = "admin@vbtoys.com";  //have no idea what their name is; make it up
+        }
+        else 
+        {
+            displayName = authorInfo.substring(startPipe + 2, endPipe - 1);
+            email = authorInfo.substr(0, startPipe - 1);
+        }
+
+        //put the email in a link
+        email = "<a href='mailto:" + email + "'/>" + email + "</a>";
+                                
+        if (Srch.U.e(ctx.CurrentItem.ViewsLifeTime))
+            viewCountInfo = "not been viewed yet.";
+        else 
+        {
+            if (ctx.CurrentItem.ViewsLifeTime > 1)
+                viewCountInfo = "been viewed " + ctx.CurrentItem.ViewsLifeTime + " times.";
+            else
+                viewCountInfo = "been viewed one time.";
+        }
+
+        //get the rounded up value of the rank; we'll display that and use it for the image height
+        var imgH = Math.round(ctx.CurrentItem.Rank);
+
+        if(!$isNull(ctx.CurrentItem) && !$isNull(ctx.ClientControl)){
+            var id = ctx.ClientControl.get_nextUniqueId();
+            $setResultItem(id, ctx.CurrentItem);
+			var urlChars = Srch.U.pathTruncationLength;
+			var titleChars = Srch.U.titleTruncationLength;
+			var hoverUrl = "~sitecollection/_catalogs/masterpage/Display Templates/Search/Item_Default_HoverPanel.js";
+            var hover_id = id + "_hover";
+_#-->
+            <div id="_#= $htmlEncode(id) =#_" name="Item" data-displaytemplate="DefaultItem" class="ms-srch-item" onmouseover="EnsureScriptParams('SearchUI.js', 'HP.Init', event, '_#= $scriptEncode(id) =#_', '_#= $scriptEncode(hover_id) =#_', '_#= $scriptEncode(hoverUrl)=#_');" onmouseout="EnsureScriptParams('SearchUI.js', 'HP.Hide');">
+                <div id="_#= hover_id =#_" class="ms-srch-hover-outerContainer"></div>
+                <div id="Main">
+<!--#_ 
+                    var hhProps = Srch.U.createXMLDocument("<root>" + ctx.CurrentItem.HitHighlightedProperties + "</root>");
+                    var title = Srch.U.getSingleHHXMLNodeValue(hhProps, "HHTitle");
+                    var url = Srch.U.getSingleHHXMLNodeValue(hhProps, "HHUrl");
+                    if ($isEmptyString(title)) {title = $htmlEncode(ctx.CurrentItem.Title)}
+                    if ($isEmptyString(url)) {url = $htmlEncode(ctx.CurrentItem.Path)} 
+_#-->
+                    <div id="Header">
+                        <a clicktype="Result" id="TitleLink" href="_#= $urlHtmlEncode(ctx.CurrentItem.Path) =#_" title="_#= $htmlEncode(ctx.CurrentItem.Title) =#_">_#= Srch.U.getTrimmedProcessedHHXMLString(title, titleChars) =#_</a>
+                    </div>
+<!--#_ 
+                    if(!Srch.U.e(ctx.CurrentItem.HitHighlightedSummary)) { 
+
+_#-->
+                        <!--  
+                            this is where you put the main content you want displayed for the item
+                        -->
+                        <div id="Summary">
+                            <table>
+                                <tr>
+                                    <td style='align:top;'>
+                                        <img src='/_layouts/images/create.gif'/>
+                                    </td>
+                                    <td style='align:top;'>
+                                        <b>_#= displayName =#_</b> published this 
+                                        document _#= ctx.CurrentItem.LastModifiedTime =#_. You can email the 
+                                        author at _#= email =#_. This author's favorite color 
+                                        is _#= ctx.CurrentItem.FavoriteColor =#_.  This item has 
+                                        _#= viewCountInfo =#_  The summary of this document 
+                                        is: <i>
+                                        _#= Srch.U.processHHXML(ctx.CurrentItem.HitHighlightedSummary) =#_
+                                        </i>.
+                                    </td>
+                                    <td style="vertical-align:top; text-align:center;">
+                                        <img src="/_layouts/images/SolutionUpgrade_16x16.png" height=" _#= imgH =#_ " /><br />
+                                        Relevance<br />
+                                         _#= imgH =#_ 
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+<!--#_ 
+
+                    } 
+_#-->
+                    <div id="Footer">
+                        <div id="Path" title="_#= $htmlEncode(ctx.CurrentItem.Path) =#_">
+                            _#= $htmlEncode(Srch.U.truncateUrl(ctx.CurrentItem.Path, urlChars)) =#_
+                        </div>
+                        <div id="CopyLinkDiv">
+<!--#_  
+							if(window.clipboardData) { 
+_#-->
+								<a id="CopyLink" href="javascript:Srch.U.copyLink('_#= $scriptEncode(ctx.CurrentItem.Path) =#_')" title="_#=$htmlEncode(Srch.Res.item_Tooltip_CopyLink) =#_">_#= $htmlEncode(Srch.Res.item_CopyLink) =#_</a>
+<!--#_ 
+							} 
+_#-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--#_ 
+        } 
+_#-->
+    </div>
+</body>
+</html>

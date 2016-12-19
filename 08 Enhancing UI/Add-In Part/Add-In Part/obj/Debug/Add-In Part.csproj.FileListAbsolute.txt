@@ -1,0 +1,3 @@
+D:\Sharepoint Mastering JS Dev\09 Enhancing UI\Add-In Part\Add-In Part\bin\Debug\Add-In Part.pdb
+D:\Sharepoint Mastering JS Dev\09 Enhancing UI\Add-In Part\Add-In Part\obj\Debug\Add-In Part.dll
+D:\Sharepoint Mastering JS Dev\09 Enhancing UI\Add-In Part\Add-In Part\obj\Debug\Add-In Part.pdb

@@ -1,0 +1,5 @@
+D:\Sharepoint Mastering JS Dev\02 Object Model Basics\JSOMBasics\JSOMBasics\bin\Debug\JSOMBasics.dll
+D:\Sharepoint Mastering JS Dev\02 Object Model Basics\JSOMBasics\JSOMBasics\bin\Debug\JSOMBasics.pdb
+D:\Sharepoint Mastering JS Dev\02 Object Model Basics\JSOMBasics\JSOMBasics\obj\Debug\JSOMBasics.csprojResolveAssemblyReference.cache
+D:\Sharepoint Mastering JS Dev\02 Object Model Basics\JSOMBasics\JSOMBasics\obj\Debug\JSOMBasics.dll
+D:\Sharepoint Mastering JS Dev\02 Object Model Basics\JSOMBasics\JSOMBasics\obj\Debug\JSOMBasics.pdb

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="1ec098fc-0e44-4078-aef5-c996bba67b0e" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="JSOMBasics.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\JSOMBasics\Context.aspx" />
+    <TemplateFile Location="Layouts\JSOMBasics\Context.aspx.js" />
+    <TemplateFile Location="Layouts\JSOMBasics\CRUD.aspx" />
+    <TemplateFile Location="Layouts\JSOMBasics\crud.aspx.js" />
+    <TemplateFile Location="Layouts\JSOMBasics\documentLibrary.js" />
+    <TemplateFile Location="Layouts\JSOMBasics\JSOMBasics.aspx" />
+    <TemplateFile Location="Layouts\JSOMBasics\JSOMBasics.aspx.js" />
+    <TemplateFile Location="Layouts\JSOMBasics\ManageLists.aspx" />
+    <TemplateFile Location="Layouts\JSOMBasics\ManageLists.aspx.js" />
+    <TemplateFile Location="Layouts\JSOMBasics\SitesAndColletions.aspx" />
+    <TemplateFile Location="Layouts\JSOMBasics\SitesAndColletions.aspx.js" />
+    <TemplateFile Location="LAYOUTS\1033\jquery-2.1.4.min.js" />
+    <TemplateFile Location="LAYOUTS\1033\masteringJSCommon.js" />
+    <TemplateFile Location="LAYOUTS\1033\ondemand.js" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="JSOM Basics_JSOMBasics\Feature.xml" />
+  </FeatureManifests>
+</Solution>

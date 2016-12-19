@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{053E667C-3A1B-4EBF-83F1-90D468F31A8F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SharePoint_TypeScript</RootNamespace>
+    <AssemblyName>SharePoint TypeScript</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptIncludeComments>true</TypeScriptIncludeComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Layouts\TypeScript\Demos.aspx.cs">
+      <DependentUpon>Demos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\TypeScript\Demos.aspx.designer.cs">
+      <DependentUpon>Demos.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\TypeScript\Voucher.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CustomActions\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3dd52a48-71d9-4fad-ba89-39d21eda015b}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{9cbe746d-9c97-439e-833f-d99fdc1267d7}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c9a9e52e-62c7-406c-b61d-76b3f3264a28}</SharePointProjectItemId>
+    </None>
+    <None Include="Layouts\TypeScript\demos\Classes.js.map" />
+    <None Include="Layouts\TypeScript\demos\functions.js.map" />
+    <None Include="Layouts\TypeScript\demos\generics.js.map" />
+    <None Include="Layouts\TypeScript\demos\interfaces.js.map" />
+    <None Include="Layouts\TypeScript\demos\mathFunctions.js.map" />
+    <None Include="Layouts\TypeScript\demos\modules.js.map" />
+    <None Include="Layouts\TypeScript\demos\Service.js.map" />
+    <None Include="Layouts\TypeScript\demos\servicemodel.js.map" />
+    <Content Include="Layouts\TypeScript\demos\types.js.map" />
+    <None Include="packages.config" />
+    <None Include="Package\Package.package">
+      <PackageId>{d6f1564b-989a-4efa-8a6f-be2e38b4d42c}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="CustomActions\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\TypeScript\css\demo.css" />
+    <Content Include="Layouts\TypeScript\Demos.aspx" />
+    <Content Include="Layouts\TypeScript\demos.aspx.js" />
+    <Content Include="Layouts\TypeScript\demos\Classes.html" />
+    <Content Include="Layouts\TypeScript\demos\Classes.js" />
+    <Content Include="Layouts\TypeScript\demos\functions.html" />
+    <Content Include="Layouts\TypeScript\demos\functions.js" />
+    <Content Include="Layouts\TypeScript\demos\generics.html" />
+    <Content Include="Layouts\TypeScript\demos\generics.js" />
+    <Content Include="Layouts\TypeScript\demos\interfaces.html" />
+    <Content Include="Layouts\TypeScript\demos\interfaces.js" />
+    <Content Include="Layouts\TypeScript\demos\mathFunctions.js" />
+    <Content Include="Layouts\TypeScript\demos\modules.html" />
+    <Content Include="Layouts\TypeScript\demos\modules.js" />
+    <Content Include="Layouts\TypeScript\demos\Service.html" />
+    <Content Include="Layouts\TypeScript\demos\Service.js" />
+    <Content Include="Layouts\TypeScript\demos\servicemodel.js" />
+    <Content Include="Layouts\TypeScript\demos\types.html" />
+    <Content Include="Layouts\TypeScript\demos\types.js" />
+    <Content Include="Layouts\TypeScript\lib\jquery\jquery.min.js" />
+    <Content Include="Layouts\TypeScript\lib\moment\moment.js" />
+    <Content Include="Scripts\SP.debug.js" />
+    <Content Include="Scripts\_references.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Layouts\TypeScript\demos\Classes.ts" />
+    <TypeScriptCompile Include="Layouts\TypeScript\demos\datamodels.ts" />
+    <TypeScriptCompile Include="Layouts\TypeScript\demos\functions.ts" />
+    <TypeScriptCompile Include="Layouts\TypeScript\demos\generics.ts" />
+    <TypeScriptCompile Include="Layouts\TypeScript\demos\interfaces.ts" />
+    <TypeScriptCompile Include="Layouts\TypeScript\demos\mathFunctions.ts" />
+    <TypeScriptCompile Include="Layouts\TypeScript\demos\modules.ts" />
+    <TypeScriptCompile Include="Layouts\TypeScript\demos\Service.ts" />
+    <TypeScriptCompile Include="Layouts\TypeScript\demos\servicemodel.ts" />
+    <Content Include="Layouts\TypeScript\demos\types.ts">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\microsoft-ajax\microsoft.ajax.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\sharepoint\SharePoint.d.ts" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>
